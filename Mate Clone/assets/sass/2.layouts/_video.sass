@@ -1,0 +1,25 @@
+#video
+  +background(primary-overlay, videobg)
+  background-attachment: fixed
+  color: $white
+  .section-head,
+  .section-desc
+    color: $white
+  
+  .section-head::after
+    background: $white
+
+  .video-wrap
+    border: 2px solid $white
+    +circle(5rem)
+    position: relative
+    margin: 2rem auto 0
+    cursor: pointer
+    +transition(fast)
+    &:hover
+      background: $white
+    &:hover i
+      color: $primary
+    i
+      +center
+      font-size: 2rem

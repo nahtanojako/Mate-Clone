@@ -1,0 +1,43 @@
+#portfolio
+  overflow: hidden
+  .filter
+    margin: 3rem 0
+    text-align: center
+    .btn
+      padding: 0.4rem 0.5rem
+      margin: 0.3rem 0.2rem
+      font-weight: 400
+      +bp(md)
+        padding: 0.6rem 2rem
+    .active
+      background: white
+      border: 1px solid $primary
+      color: $primary
+
+  .img-wrap
+    cursor: pointer
+    position: relative
+    margin-bottom: 2rem
+    &:hover .img-overlay
+      opacity: 1
+    .img-overlay
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      background: rgba($black, 0.7)
+      opacity: 0
+      +transition(fast)
+      a
+        +center
+        +circle(3rem)
+        border: 1px solid $primary
+        &:hover
+          background: $primary
+        &:hover i
+          color: $white
+        i
+          +center
+          color: $primary
+
+

@@ -1,0 +1,76 @@
+#contact
+  background: $gray-8
+  color: $white
+  .contact-info
+    h3
+      font-weight: 700
+      letter-spacing: 1px
+      margin-bottom: 2rem
+    ul li
+      font-size: 0.9rem
+      padding: 0.5rem 0
+
+    .social-icon 
+      text-align: left
+      justify-content: flex-start
+      margin-top: 1.5rem
+
+      +bp(sm)
+        justify-content: space-between
+      +bp(md)
+        justify-content: flex-start
+
+      .list-item
+        margin: 0
+        &:not(:last-child)
+          margin-right: 10px
+        +bp(md)
+          &:not(:last-child)
+            margin-right: 10px
+
+        a:hover i
+          color: $white
+
+        &:nth-child(1) a:hover
+          background: $fb-bg
+        &:nth-child(2) a:hover
+          background: $tr-bg
+        &:nth-child(3) a:hover
+          background: $gp-bg
+        &:nth-child(4) a:hover
+          background: $ln-bg
+        &:nth-child(5) a:hover
+          background: $dr-bg
+
+        &:nth-child(1) a i
+          color: $fb-bg
+        &:nth-child(2) a i
+          color: $tr-bg
+        &:nth-child(3) a i
+          color: $gp-bg
+        &:nth-child(4) a i
+          color: $ln-bg
+        &:nth-child(5) a i
+          color: $dr-bg
+
+        a
+          +circle(2.5rem)
+          background: $white
+          display: block
+          position: relative
+          &:hover i
+            color: $white
+          i
+            +center
+
+  .contact-form
+    margin-top: 3rem
+    +bp(sm)
+      margin: 0
+    .btn-wrap
+      .btn
+        padding-top: 0.8rem
+        padding-bottom: 0.8rem
+        text-align: center
+        display: block
+        margin: 0 auto

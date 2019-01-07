@@ -1,0 +1,28 @@
+#team
+  .block
+    border-radius: 1rem !important
+    overflow: hidden
+    padding: 0
+  .block-body
+    background: $gray-2
+    padding-bottom: 1.5rem
+  .social-icon 
+    .list-item
+      a:hover i
+        color: $white
+      &:nth-child(1) a:hover
+        background: $fb-bg
+      &:nth-child(2) a:hover
+        background: $tr-bg
+      &:nth-child(3) a:hover
+        background: $gp-bg
+      &:nth-child(4) a:hover
+        background: $ln-bg
+      a
+        +circle(2rem)
+        background: $white
+        display: block
+        position: relative
+        i
+          +center
+          color: $primary

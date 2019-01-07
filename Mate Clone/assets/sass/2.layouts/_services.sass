@@ -1,0 +1,22 @@
+#services,
+#features
+  .block
+    box-shadow: 0 0 3px 1px rgba($black, 0.1)
+    +transition(fast)
+    &:hover
+      box-shadow: 0 0 7px 4px rgba($primary, 0.4)
+    &:hover .block-icon
+      background: $primary
+    &:hover .block-icon i
+      color: $white
+
+    .block-icon
+      +circle(3.5rem)
+      margin: auto
+      border: 1px solid $primary
+      position: relative
+      +transition(fast)
+      i
+        +center
+        font-size: 1.5rem
+        color: $primary

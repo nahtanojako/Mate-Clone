@@ -1,0 +1,58 @@
+#features
+  +background(none, bg1)
+  background-attachment: fixed
+  padding-bottom: 0
+
+  .block
+    +flex(row, space-between, center)
+    flex-wrap: nowrap
+
+  .section-head,
+  .section-desc,
+  .block-desc
+    color: $white
+
+  .block-icon,
+  .block-head
+    color: $primary
+
+  .block-icon
+    margin: 0
+    
+  .block-body
+    flex: 1
+    text-align: left
+    padding-top: 0
+
+  .show-box
+    display: none
+    +bp(lg)
+      display: block
+
+.self-end
+  align-self: flex-end
+
++bp(lg)
+  .block
+    padding-top: 0.5rem
+    padding-bottom: 0.5rem 
+    margin-bottom: 0.5rem 
+    +bp(xl)
+      padding-top: 1rem
+      padding-bottom: 1rem
+      margin-bottom: 2rem
+    .block-body
+      padding-right: 0 !important
+    .block-head
+      font-size: 1.2rem
+      +bp(xl)
+        font-size: 1.4rem
+  #features    
+    .col-md-6
+      padding-left: 0.25rem
+      padding-right: 0.25rem
+      +bp(xl)
+        padding-left: 1rem
+        padding-right: 1rem
+    .col-lg-4
+      padding: 0

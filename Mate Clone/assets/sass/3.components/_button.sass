@@ -1,0 +1,23 @@
+.btn
+  display: inline-block
+  padding: 0.6rem 2rem
+  border-radius: 1.3rem
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 0.9rem
+  letter-spacing: 1px
+  
+
+.btn-primary
+  background: $primary
+  color: $white
+  &:hover
+    background: darken($primary, 10%)
+  &:focus
+    background: darken($primary, 20%)
+
+button
+  @extend .btn
+  border: 1px solid transparent
+  outline: none
+  cursor: pointer
